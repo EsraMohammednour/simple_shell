@@ -99,17 +99,8 @@ char *ourPath(char *ranim)
  */
 void _error(char *path, char *command, int ind)
 {
-	char *fuad;
-	char msg[] = ": not found\n";
 
-	fuad = ranim(ind);
-	write(STDERR_FILENO, path, strlen(path));
-	write(STDERR_FILENO, ": ", 2);
-	write(STDERR_FILENO, fuad, strlen(fuad));
-	write(STDERR_FILENO, ": ", 2);
-	write(STDERR_FILENO, command, strlen(command));
-	write(STDERR_FILENO, msg, strlen(msg));
-	free(fuad);
+	fprintf(stderr, "%s: %d: %s: not found\n", path, ind, command);
 }
 
 /**
