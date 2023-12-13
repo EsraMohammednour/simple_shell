@@ -21,8 +21,6 @@ int execute_fun(char **ranim, char **ala, int ind);
 void _error(char *path, char *command, int ind);
 char *ourPath(char *ranim);
 char *_environ(char *var);
-void rev_str(char *a, int n);
-char *ranim(int x);
 int alrady_exist(char *ranim);
 void check_command(char **ranim, char *arv[], int *fuad, int ind);
 void _exit_exit(char **ranim, int *fuad);
