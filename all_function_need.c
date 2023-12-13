@@ -146,7 +146,8 @@ int main(int argc, char *argv[])
 {
 	char *esra = NULL;
 	char **atika = NULL;
-	int stat = 0, ind = 0;
+	int stat = 0;
+	int ind = 0;
 
 	(void)argc;
 	while (1)
